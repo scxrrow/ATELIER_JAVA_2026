@@ -133,8 +133,6 @@ for (int i = cpt - 1; i >= 1; i--) {
 <% } %>
 
 <% } %>
-
-<% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
