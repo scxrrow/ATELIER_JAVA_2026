@@ -39,11 +39,11 @@ A, B et C et dites nous si la valeur de C est comprise entre A et B.</br>
 </p>
 
 <%
-if(intValeur1 < intValeur3 < intValeur2 || intValeur1 > intValeur3 > intValeur2){
-    System.out.println("C est compris entre A et B);
+if(intValeur1 < intValeur3 && intValeur3 < intValeur2 || intValeur1 > intValeur3 && intValeur3 > intValeur2){
+    System.out.println("C est compris entre A et B");
 }
 else {
-System.out.println("C n'est pas compris entre A et B);
+System.out.println("C n'est pas compris entre A et B");
 }
 %>
 <h2>Exercice 2 : Pair ou Impair ?</h2>
