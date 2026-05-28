@@ -99,9 +99,30 @@
 
 <h2>Exercice 6 : Le demi losange</h2>
 <p>Ecrire le code afin de produire un losange</p>
-<p>Exemple si l'utilisateur saisie le valeur 5</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
-<p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
+
+<%-- Solution Exercice 6 --%>
+<p>
+<% 
+for (int i = 1; i <= cpt; i++) { 
+    for (int s = 1; s <= (cpt - i); s++) {
+        out.print("&nbsp;&nbsp;");
+    }
+    for (int j = 1; j <= i; j++) { 
+        out.print("*");
+    } 
+    out.print("<br>");
+}
+for (int i = cpt - 1; i >= 1; i--) { 
+    for (int s = 1; s <= (cpt - i); s++) {
+        out.print("&nbsp;&nbsp;");
+    }
+    for (int j = 1; j <= i; j++) { 
+        out.print("*");
+    } 
+    out.print("<br>");
+} 
+%>
+</p>
 
 <h2>Exercice 7 : La table de multiplication</h2>
 <p>Ecrire le code afin de créser une table de multiplication</p>
