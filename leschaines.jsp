@@ -79,12 +79,32 @@ for (int i = 0; i < chaine.length(); i += 2) {
 
 <h2>Exercice 5 : La phrase en verlant</h2>
 <p>Ecrire le programme afin d'afficher le texte en verlant </br>
-Exemple : L'hiver sera pluvieux</br>
-xueivulp ares revih'l</p>
+<%
+for (int i = chaine.length() - 1; i >= 0; i--) {
+    out.print(chaine.charAt(i));
+}
+%>
+</p>
 
 <h2>Exercice 6 : Consonnes et voyelles</h2>
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
+<%
+int nbVoyelles = 0;
+int nbConsonnes = 0;
 
+for (int i = 0; i < chaineMin.length(); i++) {
+    char c = chaineMin.charAt(i);
+
+    if (c >= 'a' && c <= 'z') {
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || c == 'y') {
+            nbVoyelles++;
+        } else {
+            nbConsonnes++;
+        }
+    }
+}
+out.print("Le texte contient " + nbVoyelles + " voyelles et " + nbConsonnes + " consonnes.");
+%>
 <% } %>
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
